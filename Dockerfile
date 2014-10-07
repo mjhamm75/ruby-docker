@@ -23,3 +23,5 @@ RUN cd /tmp && \
 	cd .. && \
 	rm -rf ruby-2.1.2 && \
 	rm -f ruby-2.1.2.tar.gz
+
+RUN gem install rails --no-document
