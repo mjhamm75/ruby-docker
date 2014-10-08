@@ -14,6 +14,8 @@ RUN apt-get -y install build-essential zlib1g-dev libssl-dev libreadline6-dev li
 
 ADD http://cache.ruby-lang.org/pub/ruby/ruby-2.1.2.tar.gz /tmp/
 
+RUN apt-get -y install openjdk-7-jdk
+
 RUN cd /tmp && \
 	tar -xzf ruby-2.1.2.tar.gz && \
 	cd ruby-2.1.2 && \
